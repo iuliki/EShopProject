@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class CartManager  {
-    // Membru static pentru instanța unică
+
     private static CartManager instance;
 
     // Lista de produse în coș
@@ -20,14 +20,14 @@ public class CartManager  {
     private List<Command> commandHistory;
     private OrderMediator mediator;
 
-    // Constructor privat pentru a preveni instantierea directă
+
     public CartManager() {
         cartItems = new ArrayList<>();
         commandHistory = new ArrayList<>();
         this.mediator = mediator;
     }
 
-    // Metodă pentru a obține instanța unică
+
     public static CartManager getInstance() {
         if (instance == null) {
             instance = new CartManager();
@@ -73,8 +73,7 @@ public class CartManager  {
         // Afișează opțiunile după adăugarea produsului în coș
         displayOptions();
     }
-    // Alte metode pentru gestionarea coșului de cumpărături
-    // ...
+
     public void displayCart() {
         System.out.println("Cart items:");
         double totalCartPrice = 0;
@@ -159,7 +158,7 @@ public class CartManager  {
             Product product = cartItem.getProduct();
             int quantity = cartItem.getQuantity();
 
-            // Calculăm totalul pentru fiecare produs în coș
+
             totalCartPrice += product.getPrice() * quantity;
         }
 
@@ -167,7 +166,7 @@ public class CartManager  {
     }
     public void placeOrder(Product product, int quantity) {
         mediator.placeOrder(this, product, quantity);
-        displayCart();  // Afisam coșul după plasarea comenzii
+        displayCart();
     }
     private int getProductQuantity(Product product) {
         int quantity = 0;

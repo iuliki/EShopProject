@@ -1,10 +1,9 @@
 package main.java.mediator;
 
-import main.java.cart.CartItem;
 import main.java.cart.CartManager;
 import main.java.commands.AddToCartCommand;
 import main.java.products.Product;
-import main.java.users.Client;
+
 
 public class OrderMediator {
     public void placeOrder(CartManager cartManager, Product product, int quantity) {
@@ -26,5 +25,5 @@ public class OrderMediator {
         }
     }
 
-    // Alte metode pentru gestionarea procesului de plată, etc.
+
 }

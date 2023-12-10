@@ -10,7 +10,7 @@ public class User {
         this.email = email;
     }
 
-    // Getteri și setteri pentru atributele comune
+
 
     public String getName() {
         return name;

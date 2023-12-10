@@ -46,7 +46,7 @@ public class Seller extends User{
     }
 
     public void configurePromotion(Product product, double discountPercent, String timeInterval) {
-        // Implementează configurarea promoției
+
         System.out.println("Promotion configured for product: " + product.getName());
     }
 
@@ -74,6 +74,5 @@ public class Seller extends User{
 
 
 
-    // Alte metode specifice vânzătorului
-    // ...
+
 }

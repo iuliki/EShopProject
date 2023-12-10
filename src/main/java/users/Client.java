@@ -12,17 +12,16 @@ public class Client extends User {
     private PaymentStrategy paymentStrategy;
     // Constructor
     public Client(String name, String email) {
-        super(name, email);  // Apelăm constructorul clasei părinte
+        super(name, email);
         cart = new ArrayList<>();
         favorites = new ArrayList<>();
     }
 
-    // Metode specifice pentru client
+
     public void clientSpecificMethod() {
         System.out.println("This is a method specific to clients.");
     }
 
-    // Metode specifice pentru client (cumpărare, adăugare în lista de favorite, etc.)
     public void addToCart(Product product) {
         cart.add(product);
         System.out.println("Product added to the cart: " + product.getName());

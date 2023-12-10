@@ -6,7 +6,7 @@ public class Product {
     private int stock;
     private double price;
 
-    // Constructor
+
     public Product(String name, String category, int stock, double price) {
         this.name = name;
         this.category = category;
@@ -14,7 +14,7 @@ public class Product {
         this.price = price;
     }
 
-    // Metoda pentru a afișa informații despre produs
+
     public void displayInfo() {
         System.out.println("Product: " + name);
         System.out.println("Category: " + category);
@@ -22,13 +22,12 @@ public class Product {
         System.out.println("Price: " + price);
     }
 
-    // Getter pentru nume
+
     public String getName() {
         return name;
     }
 
-    // Alte metode și getteri pentru gestionarea produselor
-    // ...
+
     public void updateInfo(String newName, String newCategory, int newStock, double newPrice) {
         this.name = newName;
         this.category = newCategory;

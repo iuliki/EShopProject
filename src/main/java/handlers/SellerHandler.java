@@ -58,7 +58,7 @@ public class SellerHandler implements UserHandlerStrategy {
         while (true) {
             System.out.println("Introduceți numele produsului (sau \"exit\" pentru a ieși):");
 
-            // Consumă newline-ul rămas
+
             scanner.nextLine();
 
             String productName = scanner.nextLine();
